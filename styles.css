@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+}
+
+.container {
+    height: 960px;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid black;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    border: 1px solid grey;
+    flex: 1;
+}
