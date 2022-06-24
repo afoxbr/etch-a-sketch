@@ -1,16 +1,16 @@
 let container = document.querySelector('.container');
 
-let gridSize = 16;
-
 function sizeInput() {
-    makeGrid();
+    let gridSize = prompt("Type in a number between 2 and 100");
+    makeGrid(gridSize);
+    draw();
 }
 
-makeGrid();
+makeGrid(16);
 
-function makeGrid() {
-  let gridSize = prompt("Please put in a number between 1 and 100");
-  if (gridSize < 0 || gridSize > 100 || isNaN(gridSize)){
+function makeGrid(gridSize) {
+  container.innerHTML = "";
+  if (gridSize <= 0 || gridSize > 100 || isNaN(gridSize)){
     for (let i = 1; i < 16; i++) {
         let row = document.createElement('div');
         row.classList.add('row');
@@ -23,7 +23,7 @@ function makeGrid() {
     }
   }
   else {
-    for (let i = 1; i < gridSize; i++) {
+    for (let i = 1; i <= gridSize; i++) {
         let row = document.createElement('div');
         row.classList.add('row');
         container.appendChild(row);
