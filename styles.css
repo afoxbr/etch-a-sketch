@@ -1,13 +1,46 @@
+.body {
+    display: flex;
+    justify-items: center;
+}
+
 .header {
     text-align: center;
+    font: "Futura";
+    background-color: azure;
+}
+
+.title {
+    padding: 10px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    color: #0032A0;
+    width: fit-content;
+    border: 5px solid grey;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sizeBtn {
+    margin: 10px;
+    color: #0032A0;
+}
+
+.refresh {
+    margin: 10px;
+    color:#0032A0;
 }
 
 .container {
     height: 960px;
     width: 960px;
     display: flex;
+    margin: auto;
     flex-direction: column;
-    border: 10px solid black;
+    border: 10px solid grey;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .row {

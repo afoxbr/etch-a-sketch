@@ -8,7 +8,10 @@
     <body>
         <div class="header">
           <div class="title">Etch-A-Sketch</div>
-          <button onclick="sizeInput()" class="sizeBtn">Input grid size</button>
+          <div class="control">
+            <button onclick="sizeInput()" class="sizeBtn">Input grid size</button>
+            <button onclick="window.location.reload();" class="refresh">Clean slate</button>
+          </div>
         </div>
         <div class="container"></div>
         <script src="scripts.js"></script>
